@@ -53,7 +53,7 @@ namespace VulnerableService
         
         public string DecryptLocalSecret(string encryptedData)
         {
-            return  Encoding.UTF8.GetString(ProtectedData.UnProtect((ConvertFrom.Base64String(encryptedData), (byte[])null, DataProtectionScope.LocalMachine));
+            return  Encoding.UTF8.GetString(ProtectedData.UnProtect((ConvertFrom.Base64String(encryptedData), (byte[])null, DataProtectionScope.LocalMachine)));
         }
     }
 }
